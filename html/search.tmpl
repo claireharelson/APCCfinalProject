@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+   
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/charels1/final/css/search_protein.css">
+    </head>
+   
+    <body>
+      <h1>E. Coli BL21 Protein Search Results</h1>
+      
+        {% for result in results %}
+      <div class="row">
+	<div class="column">
+	  <h2>Structure ID</h2>
+          <p>{{ result.structure_id }}</p>
+        </div> 
+
+	<div class="column">
+	  <h2>Protein Name</h2>
+	  <p>{{ result.name }}</p>
+	</div>
+
+	<div class="column">
+	  <h2>Protein Function</h2>
+          <p>{{ result.head }}</p>
+	</div>
+      </div>
+
+      <div class="row">
+	<div class="column">
+	  <h2>Structure Deposition Date</h2>
+	  <p>{{ result.deposition_date }}</p>
+	</div>
+
+	<div class="column">
+	  <h2>Structure Release Date</h2>
+          <p>{{ result.release_date }}</p>
+	</div>
+	
+	<div class="column">
+	  <h2>Structure Determination Method</h2> 
+	  <p>{{ result.structure_method }}</p>
+	</div>
+      </div>
+
+      <div class="row">
+	<div class="column">
+	  <h2>Structure Resolution (Angstroms)</h2>         
+	  <p>{{ result.resolution }}</p>
+	</div>
+	
+	<div class="column">
+	  <h2>Journal Reference</h2>
+	  <p>{{ result.journal_reference }}</p>
+	</div>
+	
+	<div class="column">
+	  <h2>Author(s)</h2>
+	  <p>{{ result.author }}</p>
+	</div>
+      </div> 
+        {% endfor %}
+
+    </body>
+</html>
