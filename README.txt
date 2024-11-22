@@ -24,7 +24,7 @@ Utilizes tools published at:
 
 * TOOL USAGE *
 
-1. Initial form can be found at http://bfx3.aap.jhu.edu/charels1/final/html/search.html
+1. Initial form can be found at http://bfx3.aap.jhu.edu/charels1/final/html/search.html (must be connected to JHU server to access this)
 
 2. Enter the name of an Escherichia coli BL21 (D3) protein into the search bar and click submit.
 
